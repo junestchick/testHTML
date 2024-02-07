@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MECAPPS</title>
+  <script type="text/javascript">
+    function loadURLInTab(url) {
+      window.open(url, '_blank');
+    }
+
+    function delayedLoad() {
+      // Load the first URL in current tab
+      window.location.href = 'https://amzn.to/3OyAyRk';
+
+      // Delay for 1 second before opening the second URL in a new tab
+      setTimeout(function() {
+        loadURLInTab('https://apps.apple.com/us/app/me-station/id1562819934?l=vi');
+      }, 1000);
+    }
+
+    window.onload = delayedLoad;
+  </script>
+</head>
+<body>
+  <h1>Loading URLs</h1>
+</body>
+</html>
